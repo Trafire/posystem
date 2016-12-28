@@ -2,7 +2,9 @@
 class User extends CI_Controller {
     public function index()
     {
+       $this->load->view('header'); 
        $this->load->view('forms/create_user_view');
+       $this->load->view('footer');
        
     }
 
