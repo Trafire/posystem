@@ -1,13 +1,21 @@
 <?php
-    $this->load->helper('form');.
+    $this->load->helper('form');
     
-    form_open("User/create_user");
+    echo form_open("User/create_user");
+    $fields = array('username','firstname','lastname', 'email');
     
-    echo form_input('username');
-    echo form_input('firstname');
-    echo form_input('lastname');
+    foreach ($fields as $field)
+    {
+        echo form_label($field,$field);
+	echo form_input($field);
+        echo "<br>";
+  
+        
+    }
+    echo form_label("password","password");
     echo form_password('password');
-    echo form_input('email');
+    echo form_submit('submit', 'Register');
+
     echo form_close('');
 
     
