@@ -1,4 +1,4 @@
-<form action="create_user" method="post" accept-charset="utf-8">
+<form action="User/create_user" method="post" accept-charset="utf-8">
   <div class="form-group">
     <label for="username">Username</label>
     <input id="username" type="text" name="username" value="" class="form-control" placeholder="Username"/>
