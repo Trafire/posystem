@@ -3,7 +3,7 @@ class User extends CI_Controller {
     public function index()
     {
        $data['title']= "Register";
-       $this->load->view('header'); 
+       $this->load->view('header',$data); 
        $this->load->view('forms/create_user_view');
        $this->load->view('footer');
        
