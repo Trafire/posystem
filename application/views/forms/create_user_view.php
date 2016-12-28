@@ -16,7 +16,7 @@
     <input id="lastname" type="text" name="lastname" value="" class="form-control" placeholder="Last Name"/>
 
     <label for="email1">Email address</label>
-    <input type="email" class="form-control" id="email" placeholder="Email">
+    <input type="email" name="firstname" class="form-control" id="email" placeholder="Email">
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
