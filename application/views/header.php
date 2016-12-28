@@ -13,5 +13,8 @@
     
 </head>
 <body>
+<div class="container-fluid">
 <h1><?=$title?></h1>
+
+
 

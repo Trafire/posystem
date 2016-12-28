@@ -2,7 +2,7 @@
   <div class="form-group">
     <label for="username">Username</label>
     <input id="username" type="text" name="username" value="" class="form-control" placeholder="Username"/>
-    <p class="help-block">You will use this to Login</p>
+    <p class="help-block">You will use this to log in</p>
 
     <label for="password">Password</label>
     <input type="password" id="password" class="form-control" placeholder="Password">
@@ -17,6 +17,7 @@
 
     <label for="email">Email address</label>
     <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+    <p class="help-block">Must use valid FM email</p>
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
