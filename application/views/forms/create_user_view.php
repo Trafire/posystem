@@ -1,21 +1,25 @@
-<div>
-    <?php
-        $this->load->helper('form');
-        
-        echo form_open("User/create_user");
-        $fields = array('username','firstname','lastname', 'email');
-        
-        foreach ($fields as $field)
-        {
-            echo form_label($field,$field);
-	        echo form_input($field);
-            echo "<br>";
-          }
-        echo form_label("password","password");
-        echo form_password('password');
-        echo form_submit('submit', 'Register');
-        echo form_close('');
-    ?>
-</div>
+<form action="/create_user" method="post" accept-charset="utf-8">
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input id="username" type="text" name="username" value="" class="form-control" placeholder="Username"/>
+    <p class="help-block">You will use this to Login</p>
 
+    <label for="password">Password</label>
+    <input type="password" id="password" class="form-control" placeholder="Password">
+  </div>
+
+  <div class="form-group">
+
+  <label for="firstname">First Name</label>
+  <input id="firstname" type="text" name="firstname" value="" class="form-control" placeholder="First Name"/>
+
+  <label for="lastname">Last Name</label>
+  <input id="lastname" type="text" name="lastname" value="" class="form-control" placeholder="Last Name"/>
+
+  <label for="email1">Email address</label>
+  <input type="email" class="form-control" id="email" placeholder="Email">
+
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
 
